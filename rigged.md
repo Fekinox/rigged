@@ -61,49 +61,26 @@ All characters start off with 10 health, plus the VIT stat.
 
 All characters start off with 0 VP. VP can be replenished with items or by using INT-INT (Charge)
 
-### GEAR
+### STARTER GEAR
 
 All starter characters start with the following equipment:
 
 * Backpack
-  Holds up to 5 items, reducing the weight of each item by 1.
-  WEIGHT: +1
 * Default weapon:
     * No weapon.
     * Basic Sword
-      Plain ol' swordy-swordy. +1 STR.
-      WEIGHT: +2
     * Basic Dagger
-      A lightweight weapon that's easily concealable. +1 SPD.
-      WEIGHT: +1
     * Basic Hammer
-      A slow, powerful weapon. +1 DEF, +1 STR, -1 SPD.
-      WEIGHT: +3
     * Basic Wand
-      Magicky wagicky abracadabra! +1 INT.
-      WEIGHT: +2
     * Basic Gun
-      Pew pew. +1 DRV.
-      WEIGHT: +1
 * Default item:
     * No item.
     * Basic Helmet
-      -1 damage from ranged attacks.
-      WEIGHT: +1
     * Basic Armor
-      -1 damage from melee attacks.
-      WEIGHT: +2
     * Basic Shoes
-      Speedy speed boy. +1 SPD.
-      WEIGHT: +1
     * Basic Amulet
-      Makes you feel smarter just by holding it. +1 INT.
-      WEIGHT: 0
     * Health Canteen
-      Quick health-regen on the go. Recharges every 5 turns. RO 5 for +3 HP.
-      WEIGHT: +1
     * Coffee Canteen
-      A quick burst of caffeine to get you going. Recharges every 5 turns. RO 5 for +3 DRV, +2 SPD, +1 INT, and -2 HP.
 
 ### COMBAT SKILLS AND PERKS
 
