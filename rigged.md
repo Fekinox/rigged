@@ -395,10 +395,10 @@ All INT skills cost VP and deal ELEM damage. There are actually two INT-INT skil
 All DRV skills save for DRV-DRV require a firearm.
 
 * DRV-DRV: **LUCKSHOT**
-  * Next turn, roll two dice instead of one. The RO will increase by 50% (rounded DOWN) but bad things will happen if you roll above a 30... Costs 2 SP.
-  * ROLLOVER: 10 
-  * HIT: 2 dice next turn; RO +50% next turn; Rolls over 30 will be treated as a NAT 1.
-  * MISS: -3 DRV next turn.
+  * Next turn, roll two dice. If the result is between 20 and 25 **inclusive**, then the next move will always strike. If the result is 40, treat the roll as a NAT 20. Otherwise, treat the roll as a NAT 1. Costs 3 VP.
+  * ROLLOVER: 0
+  * HIT: 2 dice next turn; roll 40 for a NAT 20, between 20-25 inclusive to always succeed, anything else for a NAT 1.
+  * MISS: N/A
 
 * DRV-STR: **SHOOT**
   * Fire wepon.
