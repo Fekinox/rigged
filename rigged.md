@@ -444,9 +444,11 @@ If you encounter characters engaged in a fight, characters can burst in with an 
 
 ## ITEM MECHANICS
 
-All items raise the relevant stat when used. So using a scope on a rifle will boost DRV when using the rifle, so on.
+There are three primary item types: **PASSIVE**, **USABLE**, and **CONSUMABLE** items.
 
-All items also have a special QUIRK that is unique to that item. It's usually in the item's description.
+* **PASSIVE** items provide a base stat boost or additional abillity, which always applies. Including armor and apparel.
+* **USABLE** items provide a base stat boost, but only when used. This includes stuff like weapons and tools.
+* **CONSUMABLE** items also provide a temporary stat boost, but cannot be used constantly like **USABLES**. They either have a set recharge time, a fixed number of uses, or will simply disappear once used. So, stuff like potions and keys.
 
 ## WEIGHT
 
