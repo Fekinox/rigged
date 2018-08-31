@@ -166,10 +166,10 @@ Your options here are melee weapons and bare fists.
 Taking on the Monk trait will double the damage of bare fists, based on that level.
 
 * STR-STR: **PUNCH**
-  Just a punch.
-  ROLLOVER: 10
-  HIT: 3 PHYS damage + STR
-  MISS:
+  * Just a punch.
+  * ROLLOVER: 10
+  * HIT: 3 PHYS damage + STR
+  * MISS:
 
 * STR-SPD: **SUCKER PUNCH**
   A lightning-fast punch with increased priority. SPD increases by 1 for the turn.
