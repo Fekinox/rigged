@@ -141,7 +141,11 @@ Willpower is the force that prevents a character from being seized by the DM. Al
 
 Will work on this system laterer.
 
-## COMBAT
+## NORMAL MODE
+
+In Normal mode, players can act in any order they wish. Each message from the DM represents a single turn passing. If the DM cannot send a message in time, the DM can announce a turn end, and then write a complete interaction from there.
+
+## COMBAT MODE
 
 Fights are based around turns. Turns are organized like so:
 
@@ -239,17 +243,17 @@ Taking on the Monk trait will double the damage of bare fists, based on that lev
 
 All SPD actions have +1 priority.
 
-* SPD-STR: **STUN**
-  Inflicts Minor Stun on an enemy.
-  ROLLOVER: 13
-  HIT: Enemy loses turn; Minor Stun next turn.
-  MISS: Player is stunned.
-
 * SPD-SPD: **FLEE**
   Flee the battle, forfeiting any XP or loot gains. All players must Flee at once in order for it to work!
   ROLLOVER: 8
   HIT: Player leaves the battle.
   MISS: Lose turn.
+
+* SPD-STR: **STUN**
+  Inflicts Minor Stun on an enemy.
+  ROLLOVER: 13
+  HIT: Enemy loses turn; Minor Stun next turn.
+  MISS: Player is stunned.
 
 * SPD-DEF: **DODGE**
   Prepare to dodge an incoming attack, boosting your speed for successful dodges.
@@ -279,6 +283,12 @@ All SPD actions have +1 priority.
 
 All DEF actions strike first, at the start of a turn, and engage for the rest of the turn.
 
+* DEF-DEF: **PARRY**
+  Stuns attackers.
+  ROLLOVER: 14
+  HIT: Minor Stun to attacker. -2 incoming PHYS damage.
+  MISS: Lose turn; -1 SPD next turn.
+
 * DEF-STR: **DAMAGING GUARD**
   Damages melee attackers.
   ROLLOVER: 12
@@ -290,12 +300,6 @@ All DEF actions strike first, at the start of a turn, and engage for the rest of
   ROLLOVER: 13
   HIT: -1 incoming PHYS damage; 1 PHYS damage to range attackers
   MISS: 
-
-* DEF-DEF: **PARRY**
-  Stuns attackers.
-  ROLLOVER: 14
-  HIT: Minor Stun to attacker. -2 incoming PHYS damage.
-  MISS: Lose turn; -1 SPD next turn.
 
 * DEF-VIT: **GUARDIAN'S SHIELD**
   A shield that gets stronger with each impact. Costs 2 VP.
@@ -319,6 +323,12 @@ All DEF actions strike first, at the start of a turn, and engage for the rest of
 
 All VIT skills cost VP.
 
+* VIT-VIT: **RECOVER**
+  Restore a little health.
+  ROLLOVER: 12
+  HIT: +2 HP to user.
+  MISS: -2 VIT next turn. 
+
 * VIT-STR: **STRENGTH DANCE**
   An exciting dance that boosts STR. Costs 2 VP.
   ROLLOVER: 12
@@ -337,12 +347,6 @@ All VIT skills cost VP.
   HIT: Minor Stun to attacker. -2 incoming PHYS damage.
   MISS: Lose turn; -1 SPD next turn.
 
-* VIT-VIT: **RECOVER**
-  Restore a little health.
-  ROLLOVER: 12
-  HIT: +2 HP to user.
-  MISS: -1 VIT next turn. 
-
 * VIT-INT: **ELEMENTAL BOOST**
   Boosts power of *all* ELEM attacks next turn. Costs 4 VP.
   ROLLOVER: 15
@@ -358,6 +362,12 @@ All VIT skills cost VP.
 ### INT SKILLS
 
 All INT skills cost VP and deal ELEM damage.
+
+* INT-INT: **CHARGE**
+  Rev up your magic engines.
+  ROLLOVER: 5 
+  HIT: +3 VP to user.
+  MISS: 
 
 * INT-STR: **PSYBOMB**
   A psychic explosive.
@@ -383,12 +393,6 @@ All INT skills cost VP and deal ELEM damage.
   HIT: Minor Poison on an enemy.
   MISS: If player fails a RO 10 test, they receive Minor Poison.
 
-* INT-INT: **CHARGE**
-  Rev up your magic engines.
-  ROLLOVER: 5 
-  HIT: +3 VP to user.
-  MISS: 
-
 * INT-DRV: **VIMBOMB**
   Spend all your VP on a massive attack. Costs all the user's VP.
   ROLLOVER: 15
@@ -398,6 +402,12 @@ All INT skills cost VP and deal ELEM damage.
 ### DRV SKILLS
 
 All DRV skills save for DRV-DRV require a firearm.
+
+* DRV-DRV: **LUCKSHOT**
+  Next turn, roll two dice instead of one. The RO will increase by 50% (rounded DOWN) but bad things will happen if you roll above a 30... Costs 2 SP.
+  ROLLOVER: 10 
+  HIT: 2 dice next turn; RO +50% next turn; Rolls over 30 will be treated as a NAT 1.
+  MISS: -3 DRV next turn.
 
 * DRV-STR: **DAMAGING GUARD**
   Damages melee attackers.
@@ -429,11 +439,9 @@ All DRV skills save for DRV-DRV require a firearm.
   HIT: -2 incoming ELEM damage
   MISS: -1 SPD next turn.
 
-* DRV-DRV: **LUCKSHOT**
-  Next turn, roll two dice instead of one. The RO will increase by 50% (rounded DOWN) but bad things will happen if you roll above a 30... Costs 2 SP.
-  ROLLOVER: 10 
-  HIT: 2 dice next turn; RO +50% next turn; Rolls over 30 will be treated as a NAT 1.
-  MISS: -3 DRV next turn.
+## DECEIT MODE
+
+Yes, NPCs have willpower too! RO 15 with an INT + DRV modifier to whittle away at an NPC's willpower.
 
 ## NATS
 
