@@ -134,6 +134,14 @@ Fights are based around turns. Turns are organized like so:
 * Any ailments characters obtain will take effect next turn.
 * End of turn.
 
+Players can use action skills during turns. The skill is composed of two stats, a major stat and a minor stat. When calculating modifiers, add the major stat and half the minor stat, rounded down, to the roll.
+
+For example, say we have a player with a STR stat of 1, a SPD stat of 2, and an INT stat of -1. That player uses STR-STR with a sword (so, basic swipe) and rolls an 8. The player would then add the major (1) and the minor(1/2 -> 0) stat to the roll to get 9.
+
+Then the player decides to use STR-SPD (sneak swipe) and rolls an 11. Add the major (1) and half the minor (2/1 -> 1) and there you go.
+
+Numbers always round towards zero. So if the player uses STR-INT (elemental swipe) and rolls a 10, the -1 INT stat will round down to a 0 when halved.
+
 ### STR SKILLS
 
 Your options here are melee weapons and bare fists.
