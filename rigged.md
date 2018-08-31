@@ -134,13 +134,66 @@ Fights are based around turns. Turns are organized like so:
 * Any ailments characters obtain will take effect next turn.
 * End of turn.
 
-Players can use action skills during turns. The skill is composed of two stats, a major stat and a minor stat. When calculating modifiers, add the major stat and half the minor stat, rounded down, to the roll.
+For the sake of examples, we have four players:
+* Player A: 0|0|0|0|0|0 stats, 10 WP, Basic Sword equipped.
+* Player B: 1|-1|1|1|-2|0 stats, 8 WP, Basic Hammer equipped.
+* Player C: -3|3|-1|-1|1|1 stats, 13 WP, Basic Dagger equipped.
+* Player D: -3|0|-1|-1|3|2 stats, 9 WP, Basic Wand equipped.
 
-For example, say we have a player with a STR stat of 1, a SPD stat of 2, and an INT stat of -1. That player uses STR-STR with a sword (so, basic swipe) and rolls an 8. The player would then add the major (1) and the minor(1/2 -> 0) stat to the roll to get 9.
+Here's how actions work. For basic offensive actions (where a player attacks a single target) the offending player and defending player roll off. Each player adds their WP/2 to the roll. Then subtract the result of the defending player from the offending player and divide by 2 to get the final willpower modifier.
 
-Then the player decides to use STR-SPD (sneak swipe) and rolls an 11. Add the major (1) and half the minor (2/1 -> 1) and there you go.
+Player A chooses to attack Player B.
+* A rolls 8, + (10/2) = 13.
+* B rolls 10, + (8/2) = 14.
+* (A - B)/2 = 0 mod.
 
-Numbers always round towards zero. So if the player uses STR-INT (elemental swipe) and rolls a 10, the -1 INT stat will round down to a 0 when halved.
+Player B chooses to attack Player C.
+* B rolls 18, + (8/2) = 22.
+* C rolls 19, + (13/2) = 25.
+* (22 - 25)/2 = -1 mod.
+
+Player C chooses to attack Player A.
+* C rolls 12, + (13/2) = 18.
+* A rolls 8, + (10/2) = 13.
+* (18 - 13)/2 = +2 mod.
+
+And so on. For moves that deal splash damage (where a player attacks multiple targets) the attacker does a willpower check with each enemy individually to get its modifier. However, there is a base -2 penalty for splash damage attacks.
+
+Player A throws a grenade at Players B, C, and D.
+* A rolls 13, +(10/2) = 18.
+* B rolls 20, +(8/2) = 24.
+* C rolls 4, +(13/2) = 10.
+* D rolls 8, +(9/2) = 12.
+* (18 - 24)/2 = -3 modifier against B.
+* (18 - 10)/2 = +4 modifier against C.
+* (18 - 12)/2 = +3 modifier against D.
+
+For moves that are cooperative however, such as VIT-* buffs or revives, the two players must add their rolls together, then subtract 25 from the result and divide by 2 to get the final modifier.
+
+Player A attempts to revive Player B.
+* A rolls 12, +(10/2) = 17.
+* B rolls 5, +(8/2) = 9.
+* (17 + 9 - 25)/2 = 0 mod
+
+After the willpower check is done, players must add in all stat boosts from their equipped passive items and the usable item they are attacking with.
+
+Finally, it's time to add in stat boosts. 
+
+So let's look at some sample moves!
+
+Player A swings his sword (STR-STR-S) at Player B.
+* WILLPOWER CHECK
+  * A rolls 14, +(10/2) = 19.
+  * B rolls 11, +(8/2) = 15.
+  * (19 - 15)/2 = +2 mod.
+* EQUIPMENT CHECK
+  * +1 STR for using sword.
+* STAT CHECK
+  * MAJOR: STR -> 0 + 1 -> 1
+  * MINOR: STR -> (0 + 1)/2 -> 0
+  * FINAL = +1 mod
+* FINISH
+  * Player A rolls 12, + 2 + 1 -> 15.
 
 ### STR SKILLS
 
