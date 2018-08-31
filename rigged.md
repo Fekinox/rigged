@@ -6,9 +6,9 @@ working titles: Rigged
 
 So the gist of this system is, the DM is a perverted asshole who's locked a bunch of poor bastards inside a VR universe. Once the players find a special key, they will be free to escape. That is, *if* the DM plans on letting them leave...
 
-The players all come from all manner of multiverses, and each has their own history. This will give each character a specific 'goal' to pursue along with the main adventure- maybe learn about this new VR world, maybe screw over all their comrades, who knows. Pursuing a character's goal will give a slight boost to their stats. However, characters also have specific flaws that can hamper their Willpower when messed with.
+The players come from all manner of multiverses, and each has their own history. This will give each character a specific 'goal' to pursue along with the main adventure- maybe learn about this new VR world, maybe screw over all their comrades, who knows. Pursuing a character's goal will give a slight boost to their stats. However, characters also have specific flaws that can hamper their Willpower when messed with.
 
-Just for the record, RO x is just a shorthand for "test by rolling a D20. If it's greater than (NOT EQUAL TO) x, then it's good."
+Just for the record, RO X is just a shorthand for "test by rolling a D20. If it's greater than (NOT EQUAL TO) X, then it's good."
 
 ## CHARACTER BUILDING
 
@@ -230,7 +230,7 @@ All SPD actions have +1 priority.
 
 * SPD-SPD: **FLEE**
   * Flee the battle, forfeiting any XP or loot gains. All players must Flee at once in order for it to work!
-  * ROLLOVER: 8
+  * ROLLOVER: 5
   * HIT: Player leaves the battle.
   * MISS: Lose turn.
 
@@ -241,7 +241,7 @@ All SPD actions have +1 priority.
   * MISS: Player is stunned.
 
 * SPD-DEF: **DODGE**
-  * Prepare to dodge an incoming attack, boosting your speed for successful dodges.
+  * Prepare to dodge an incoming attack. If 
   * ROLLOVER: 12
   * HIT: +2 SPD next turn.
   * MISS: Lose turn; -1 SPD next turn.
@@ -270,19 +270,19 @@ All DEF actions strike first, at the start of a turn, and engage for the rest of
 
 * DEF-DEF: **PARRY**
   * Stuns attackers.
-  * ROLLOVER: 14
-  * HIT: Minor Stun to attacker. -2 incoming PHYS damage.
+  * ROLLOVER: 6
+  * HIT: -2 incoming PHYS damage; RO 15 to inflict Minor Stun on attacker.
   * MISS: Lose turn; -1 SPD next turn.
 
 * DEF-STR: **DAMAGING GUARD**
   * Damages melee attackers.
-  * ROLLOVER: 12
+  * ROLLOVER: 10
   * HIT: -1 incoming PHYS damage; 1 PHYS damage to melee attackers
   * MISS:
 
 * DEF-SPD: **REFLECTING GUARD**
   * Has a chance to deflect ranged attacks.
-  * ROLLOVER: 13
+  * ROLLOVER: 10
   * HIT: -1 incoming PHYS damage; 1 PHYS damage to range attackers
   * MISS: 
 
@@ -294,13 +294,13 @@ All DEF actions strike first, at the start of a turn, and engage for the rest of
 
 * DEF-INT: **ELEMENTAL GUARD**
   * Resists elemental attacks. Costs 1 VP.
-  * ROLLOVER: 15
-  * HIT: -2 incoming ELEM damage
-  * MISS: -1 SPD next turn.
+  * ROLLOVER: 12
+  * HIT: -3 incoming ELEM damage
+  * MISS: -1 SPD and INT next turn.
 
 * SPD-DRV: **POWERSHIELD**
   * A shield that boosts a random stat for each hit.
-  * ROLLOVER: 17
+  * ROLLOVER: 16
   * HIT: No damage reduction; raises a random stat next turn per hit.
   * MISS: Player gets Minor Stun next turn 
 
@@ -309,27 +309,27 @@ All DEF actions strike first, at the start of a turn, and engage for the rest of
 All VIT skills cost VP.
 
 * VIT-VIT: **RECOVER**
-  * Restore a little health.
-  * ROLLOVER: 12
+  * Restore a little health. Costs 1 VP.
+  * ROLLOVER: 13
   * HIT: +2 HP to user.
   * MISS: -2 VIT next turn. 
 
 * VIT-STR: **STRENGTH DANCE**
-  * An exciting dance that boosts STR. Costs 2 VP.
-  * ROLLOVER: 12
-  * HIT: STR +2 to user/target, or +1 to user and one target.
+  * A thrilling dance that boosts STR. Costs 2 VP.
+  * ROLLOVER: 15
+  * HIT: +2 STR to user, +1 STR to user and target, or +2 STR to target
   * MISS:
 
 * VIT-SPD: **SPEED DANCE**
-  * Has a chance to deflect ranged attacks.
-  * ROLLOVER: 13
-  * HIT: -1 incoming PHYS damage; 1 PHYS damage to range attackers
+  * An exciting dance that boosts SPD. Costs 2 VP.
+  * ROLLOVER: 15
+  * HIT: +2 SPD to user, +1 SPD to user and target, or +2 SPD to target
   * MISS: 
 
 * VIT-DEF: **DEFENSE DANCE**
-  * TBD.
+  * A thumping dance that boosts DEF. Costs 2 VP.
   * ROLLOVER: 14
-  * HIT: Minor Stun to attacker. -2 incoming PHYS damage.
+  * HIT: +2 DEF to user, +1 DEF to user and target, or +2 DEF to target
   * MISS: Lose turn; -1 SPD next turn.
 
 * VIT-INT: **ELEMENTAL BOOST**
@@ -342,47 +342,53 @@ All VIT skills cost VP.
   * Revives an incapacitated player. Using Items is recommended!!!
   * ROLLOVER: 19
   * HIT: Incapacitated player comes back with 1 HP.
-  * MISS: Player gets Minor Stun next turn; -2 VIT on following turn.
+  * MISS: Player gets Minor Stun next turn; -3 VIT on following turn.
 
 ### INT SKILLS
 
-All INT skills cost VP and deal ELEM damage.
+All INT skills cost VP and deal ELEM damage. There are actually two INT-INT skills: **CHARGE**, which all players have by default; and **PSYZAP**, which must be learned.
 
-* INT-INT: **CHARGE**
-  * Rev up your magic engines.
-  * ROLLOVER: 5 
+* INT-INT-1: **CHARGE**
+  * Rev up your magic engines. 
+  * ROLLOVER: 3 
   * HIT: +3 VP to user.
   * MISS: 
 
+* INT-INT-2: **PSYZAP**
+  * Standard psychic attack. Costs 1 VP.
+  * ROLLOVER: 6
+  * HIT: 3 ELEM damage
+  * MISS: 
+
 * INT-STR: **PSYBOMB**
-  * A psychic explosive.
-  * ROLLOVER: 12
+  * A psychic explosive. Costs 2 VP.
+  * ROLLOVER: 10
   * HIT: 2 ELEM damage; 1 PHYS damage
-  * MISS:
+  * MISS: -1 HP to user
 
 * INT-SPD: **SLOW**
-  * Stops speedsters in their tracks.
-  * ROLLOVER: 13
+  * Stops speedsters in their tracks. Costs 2 VP.
+  * ROLLOVER: 10
   * HIT: -2 SPD to target
   * MISS: -2 SPD to user
 
 * INT-DEF: **SHIELD BREAK**
-  * Softens up tight defenses!
-  * ROLLOVER: 14
+  * Softens up tight defenses! Costs 2 VP.
+  * ROLLOVER: 10
   * HIT: -2 DEF to target
-  * MISS: -2 SPD to user
+  * MISS: -1 DEF and SPD to user
 
 * INT-VIT: **POISON**
-  * Poisons an enemy.
+  * Poisons an enemy. Costs 3 VP.
   * ROLLOVER: 12
   * HIT: Minor Poison on an enemy.
-  * MISS: If player fails a RO 10 test, they receive Minor Poison.
+  * MISS: If player fails a RO 8 test, they receive Minor Poison.
 
 * INT-DRV: **VIMBOMB**
   * Spend all your VP on a massive attack. Costs all the user's VP.
   * ROLLOVER: 15
   * HIT: 2 * user's VP ELEM damage.
-  * MISS: Player gets Minor Stun next turn; -2 INT on following turn
+  * MISS: Player gets Minor Stun next turn; -2 INT on following turn. Loses all their VP too, mind.
 
 ### DRV SKILLS
 
@@ -396,31 +402,31 @@ All DRV skills save for DRV-DRV require a firearm.
 
 * DRV-STR: **SHOOT**
   * Fire wepon.
-  * ROLLOVER: 12
-  * HIT: 3 PHYS damage.
+  * ROLLOVER: 10
+  * HIT: 3 + (DRV/2) PHYS damage.
   * MISS:
 
 * DRV-SPD: **RAPIDFIRE**
   * Shoot 5 times, RO 12 for each.
-  * ROLLOVER: 13
-  * HIT: 1 per shot.
+  * ROLLOVER: 12 per shot
+  * HIT: 1 + (DRV/2) per shot.
   * MISS: -1 SPD next turn.
 
 * DRV-DEF: **SLUG**
   * Stuns.
-  * ROLLOVER: 14
-  * HIT: 2 PHYS damage. RO 16 for Minor Stun.
+  * ROLLOVER: 13
+  * HIT: 2 + (DRV/2) PHYS damage. RO 16 for Minor Stun.
   * MISS: Lose turn; -1 SPD next turn.
 
 * DRV-VIT: **DRAIN SHOT**
   * Vampire bullets. Costs 2 VP.
-  * ROLLOVER: 12
+  * ROLLOVER: 14
   * HIT: 2 PHYS damage. Recovers 1 HP.
   * MISS: -1 SPD and VIT next turn.
 
 * DRV-INT: **ELEMENTAL SHOT**
   * An enchanted bullet. Costs 2 VP.
-  * ROLLOVER: 15
+  * ROLLOVER: 12
   * HIT: 3 ELEM damage
   * MISS: -1 SPD and INT next turn.
 
