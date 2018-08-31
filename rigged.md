@@ -8,6 +8,8 @@ So the gist of this system is, the DM is a perverted asshole who's locked a bunc
 
 The players all come from all manner of multiverses, and each has their own history. This will give each character a specific 'goal' to pursue along with the main adventure- maybe learn about this new VR world, maybe screw over all their comrades, who knows. Pursuing a character's goal will give a slight boost to their stats. However, characters also have specific flaws that can hamper their Willpower when messed with.
 
+Just for the record, RO x is just a shorthand for "test by rolling a D20. If it's greater than (NOT EQUAL TO) x, then it's good."
+
 ## CHARACTER BUILDING
 
 So obviously you wanna build your character. Sure. Here's how.
