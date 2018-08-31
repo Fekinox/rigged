@@ -409,35 +409,35 @@ All DRV skills save for DRV-DRV require a firearm.
   HIT: 2 dice next turn; RO +50% next turn; Rolls over 30 will be treated as a NAT 1.
   MISS: -3 DRV next turn.
 
-* DRV-STR: **DAMAGING GUARD**
-  Damages melee attackers.
+* DRV-STR: **SHOOT**
+  Fire wepon.
   ROLLOVER: 12
-  HIT: -1 incoming PHYS damage; 1 PHYS damage to melee attackers
+  HIT: 3 PHYS damage.
   MISS:
 
-* DRV-SPD: **REFLECTING GUARD**
-  Has a chance to deflect ranged attacks.
+* DRV-SPD: **RAPIDFIRE**
+  Shoot 5 times, RO 12 for each.
   ROLLOVER: 13
-  HIT: -1 incoming PHYS damage; 1 PHYS damage to range attackers
-  MISS: 
+  HIT: 1 per shot.
+  MISS: -1 SPD next turn.
 
-* DRV-DEF: **PARRY**
-  Stuns attackers.
+* DRV-DEF: **SLUG**
+  Stuns.
   ROLLOVER: 14
-  HIT: Minor Stun to attacker. -2 incoming PHYS damage.
+  HIT: 2 PHYS damage. RO 16 for Minor Stun.
   MISS: Lose turn; -1 SPD next turn.
 
-* DRV-VIT: **GUARDIAN'S SHIELD**
-  A shield that gets stronger with each impact. Costs 2 VP.
+* DRV-VIT: **DRAIN SHOT**
+  Vampire bullets. Costs 2 VP.
   ROLLOVER: 12
-  HIT: -1 incoming PHYS damage; +1 DEF for next two turns per hit.
-  MISS: 
+  HIT: 2 PHYS damage. Recovers 1 HP.
+  MISS: -1 SPD and VIT next turn.
 
-* DRV-INT: **ELEMENTAL GUARD**
-  Resists elemental attacks. Costs 1 VP.
+* DRV-INT: **ELEMENTAL SHOT**
+  An enchanted bullet. Costs 2 VP.
   ROLLOVER: 15
-  HIT: -2 incoming ELEM damage
-  MISS: -1 SPD next turn.
+  HIT: 3 ELEM damage
+  MISS: -1 SPD and INT next turn.
 
 ## DECEIT MODE
 
