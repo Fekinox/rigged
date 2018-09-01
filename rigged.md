@@ -88,11 +88,11 @@ In combat, players can use 36 different skills against their foes. However to ma
 
 All players have the STR-STR, SPD-SPD, DEF-DEF, etc. skills automatically. But they can choose 5 skills to learn and add to their repertoire. Instead of investing in skills, they can also use those points to invest in special perks.
 
-* **Specialist:** +2 to a weapon class of player's choice.
-* **Recyclist:** RO 18 to recover used Consumable-class items.
-* **Lichen:** Every other turn, RO 5 to recover 1 HP.
-* **Spammer:** Every other turn, RO 5 to gain 1 VP.
-* **Pinch:** +2 to a stat of player's choice when at critical health.
+* **Specialist:** Double damage for a weapon class of player's choice. Can only specialize in ONE weapon class.
+* **Recyclist:** When using an item, RO 18 - INT to recycle it.
+* **Lichen:** Every other turn, RO 5 to recover 1 HP. Mutually exclusive with Spammer.
+* **Spammer:** Every other turn, RO 5 to gain 1 VP. Mutually exclusive with Lichen.
+* **Pinch:** +2 to a stat of player's choice when at critical health. Only applies to one stat.
 
 ### ELEMENTAL AFFINITY
 
@@ -102,7 +102,7 @@ All characters have their affinity. It's your standard elemental rock paper scis
 * **ICE** is strong against **WIND**. RO 16 to inflict **FREEZE**.
 * **WIND** is strong against **FIRE**. RO 16 to inflict **WINDED**.
 * **NORMAL** is neither weak nor strong against any types. Cannot deal damage to **VOID** types.
-* **VOID** is immune to **NORMAL** and both deals and receives double damage from **FIRE**, **ICE**, and **WIND** types. **VOID** is exclusive to NPCs.
+* **VOID** is immune to **NORMAL** and both deals and receives double damage from **FIRE**, **ICE**, and **WIND** types. RO 18 to inflict **BLIGHT**. **VOID** is exclusive to NPCs.
 
 ### GOALS
 
@@ -205,37 +205,37 @@ Taking on the Monk trait will double the damage of bare fists, based on that lev
 
 * STR-STR: **PUNCH**
   * Just a punch.
-  * ROLLOVER: 10
+  * ROLLOVER: 4
   * HIT: 3 PHYS damage + STR
   * MISS:
 
 * STR-SPD: **SUCKER PUNCH**
   * A lightning-fast punch with increased priority. SPD increases by 1 for the turn.
-  * ROLLOVER: 11
-  * HIT: 2 PHYS damage, ignores DEF
+  * ROLLOVER: 6
+  * HIT: 2 PHYS damage + (STR + SPD)/2
   * MISS:
 
 * STR-DEF: **COUNTER**
   * Gather strength for a devastating blow. The move has priority +2. If an enemy attacks the player after he/she engages a counter, then that enemy will take damage instead. Otherwise, the player wastes a turn.
-  * ROLLOVER: 12
+  * ROLLOVER: 6
   * HIT: Damage of incoming attack + 1.
   * MISS: Lose turn.
 
 * STR-VIT: **DRAIN PUNCH**
   * An odd punch that recovers a little health when used. Costs 1 VP.
-  * ROLLOVER: 12
+  * ROLLOVER: 6
   * HIT: 2 PHYS damage, ignores DEF; 1 HP restored to user
   * MISS: -1 STR next turn.
 
 * STR-INT: **ELEMENTAL PUNCH**
   * A focused punch infusing the user's elemental affinity. Costs 1 VP.
-  * ROLLOVER: 14
+  * ROLLOVER: 6
   * HIT: 2 PHYS damage, 2 ELEM damage
   * MISS: -1 INT next turn.
 
 * STR-DRV: **MEGA PUNCH**
   * An incredibly powerful, incredibly risky punch.
-  * ROLLOVER: 16
+  * ROLLOVER: 15
   * HIT: 6 PHYS damage, RO: 10 - STR for stun chance
   * MISS: Player is stunned next turn
 
@@ -243,39 +243,39 @@ Taking on the Monk trait will double the damage of bare fists, based on that lev
 
 * STR-STR: **SWIPE**
   * A generic attack with the weapon.
-  * ROLLOVER: 10
+  * ROLLOVER: 4
   * HIT: 3 PHYS damage + STR
   * MISS:
 
 * STR-SPD: **SNEAK SWIPE**
-  * A lightning-fast punch with increased priority. SPD increases by 1 for the turn.
-  * ROLLOVER: 11
-  * HIT: 1 PHYS damage, ignores DEF; RO: 10 - STR for stun chance
+  * A sudden attack with the weapon. Has a chance to stun.
+  * ROLLOVER: 6
+  * HIT: 1 PHYS damage + (STR + SPD)/2; RO: 7 - STR for stun chance
   * MISS:
 
 * STR-DEF: **COUNTER**
   * Gather strength for a devastating blow. The move has priority +2. If an enemy attacks the player after he/she engages a counter, then that enemy will take damage instead. Otherwise, the player wastes a turn.
-  * ROLLOVER: 12
-  * HIT: Damage of incoming attack + 2.
+  * ROLLOVER: 6
+  * HIT: Damage of incoming attack + 1.
   * MISS: Lose turn.
 
 * STR-VIT: **RAGE**
   * An invigorating attack that boosts the player's spirits. Costs 1 VP.
-  * ROLLOVER: 12
-  * HIT: 2 PHYS damage, ignores DEF; +1 STR next turn
+  * ROLLOVER: 6
+  * HIT: 2 PHYS damage + (STR + VIT)/2; +1 STR next turn
   * MISS: -1 STR next turn.
 
 * STR-INT: **ELEMENTAL SWIPE**
   * A focused attack infusing the user's elemental affinity. Costs 1 VP.
-  * ROLLOVER: 14
+  * ROLLOVER: 6
   * HIT: 1 PHYS damage, 3 ELEM damage
   * MISS: -1 INT next turn.
 
 * STR-DRV: **CRIT SWIPE**
   * An incredibly powerful, incredibly risky attack.
-  * ROLLOVER: 17
-  * HIT: 7 PHYS damage, RO: 10 - STR for Minor Stun chance
-  * MISS: Player gets Minor Stun next turn 
+  * ROLLOVER: 15
+  * HIT: 7 PHYS damage, RO: 10 - STR for stun chance
+  * MISS: Player is stunned next turn
 
 ### SPD SKILLS
 
@@ -287,33 +287,33 @@ All SPD actions have +1 priority.
   * HIT: Player leaves the battle.
   * MISS: Lose turn.
 
-* SPD-STR: **STUN**
-  * Inflicts Minor Stun on an enemy.
-  * ROLLOVER: 13
-  * HIT: Enemy loses turn; Minor Stun next turn.
+* SPD-STR: **DISTRACT**
+  * Make an enemy distracted, causing them to lose the rest of their turn.
+  * ROLLOVER: 7
+  * HIT: Enemy loses turn; RO 15 - (STR + SPD)/2 for stun chance.
   * MISS: Player is stunned.
 
 * SPD-DEF: **DODGE**
-  * Prepare to dodge an incoming attack. If 
-  * ROLLOVER: 12
-  * HIT: +2 SPD next turn.
-  * MISS: Lose turn; -1 SPD next turn.
+  * Prepare to dodge an incoming attack. For each incoming attack, RO 8 - SPD to determine the dodge success. If there are no dodge fails, it counts as a HIT.
+  * ROLLOVER: 8 - SPD
+  * HIT: +1 SPD next turn.
+  * MISS: -1 SPD next turn.
 
 * SPD-VIT: **DASH DANCE**
   * Shake it up! Boost your SPD a little. Costs 3 VP.
-  * ROLLOVER: 12
+  * ROLLOVER: 4
   * HIT: +2 SPD for the next three turns.
   * MISS: 
 
 * SPD-INT: **SNATCH**
   * Steal an item from an enemy.
-  * ROLLOVER: 15
+  * ROLLOVER: 8
   * HIT: Enemy loses item
   * MISS: -1 SPD next turn.
 
 * SPD-DRV: **REFLECT**
   * If successful, can deflect projectiles back at their sender.
-  * ROLLOVER: 17
+  * ROLLOVER: 15
   * HIT: Damage of incoming projectile + 2
   * MISS: Player gets Minor Stun next turn 
 
@@ -323,35 +323,35 @@ All DEF actions strike first, at the start of a turn, and engage for the rest of
 
 * DEF-DEF: **PARRY**
   * Stuns attackers.
-  * ROLLOVER: 6
-  * HIT: -2 incoming PHYS damage; RO 15 to inflict Minor Stun on attacker.
+  * ROLLOVER: 3
+  * HIT: -2 - (DEF) incoming PHYS damage; RO 18 to inflict Minor Stun on attacker.
   * MISS: Lose turn; -1 SPD next turn.
 
 * DEF-STR: **DAMAGING GUARD**
   * Damages melee attackers.
-  * ROLLOVER: 10
-  * HIT: -1 incoming PHYS damage; 1 PHYS damage to melee attackers
+  * ROLLOVER: 5
+  * HIT: -1 - (DEF) incoming PHYS damage; 1 PHYS damage to melee attackers
   * MISS:
 
 * DEF-SPD: **REFLECTING GUARD**
   * Has a chance to deflect ranged attacks.
-  * ROLLOVER: 10
-  * HIT: -1 incoming PHYS damage; 1 PHYS damage to range attackers
+  * ROLLOVER: 6
+  * HIT: -1 - (DEF) incoming PHYS damage; 1 PHYS damage to range attackers
   * MISS: 
 
 * DEF-VIT: **GUARDIAN'S SHIELD**
   * A shield that gets stronger with each impact. Costs 2 VP.
-  * ROLLOVER: 12
-  * HIT: -1 incoming PHYS damage; +1 DEF for next two turns per hit.
+  * ROLLOVER: 5
+  * HIT: -1 - (DEF) incoming PHYS damage; +1 DEF for next two turns per hit.
   * MISS: 
 
 * DEF-INT: **ELEMENTAL GUARD**
   * Resists elemental attacks. Costs 1 VP.
-  * ROLLOVER: 12
-  * HIT: -3 incoming ELEM damage
+  * ROLLOVER: 5
+  * HIT: -3 - (DEF) incoming ELEM damage
   * MISS: -1 SPD and INT next turn.
 
-* SPD-DRV: **POWERSHIELD**
+* DEF-DRV: **POWERSHIELD**
   * A shield that boosts a random stat for each hit.
   * ROLLOVER: 16
   * HIT: No damage reduction; raises a random stat next turn per hit.
@@ -363,37 +363,37 @@ All VIT skills cost VP.
 
 * VIT-VIT: **RECOVER**
   * Restore a little health. Costs 1 VP.
-  * ROLLOVER: 13
+  * ROLLOVER: 10
   * HIT: +2 HP to user.
   * MISS: -2 VIT next turn. 
 
 * VIT-STR: **STRENGTH DANCE**
   * A thrilling dance that boosts STR. Costs 2 VP.
-  * ROLLOVER: 15
+  * ROLLOVER: 7
   * HIT: +2 STR to user, +1 STR to user and target, or +2 STR to target
   * MISS:
 
 * VIT-SPD: **SPEED DANCE**
   * An exciting dance that boosts SPD. Costs 2 VP.
-  * ROLLOVER: 15
+  * ROLLOVER: 7
   * HIT: +2 SPD to user, +1 SPD to user and target, or +2 SPD to target
   * MISS: 
 
 * VIT-DEF: **DEFENSE DANCE**
   * A thumping dance that boosts DEF. Costs 2 VP.
-  * ROLLOVER: 14
+  * ROLLOVER: 7
   * HIT: +2 DEF to user, +1 DEF to user and target, or +2 DEF to target
   * MISS: Lose turn; -1 SPD next turn.
 
 * VIT-INT: **ELEMENTAL BOOST**
   * Boosts power of *all* ELEM attacks next turn. Costs 4 VP.
-  * ROLLOVER: 15
+  * ROLLOVER: 7
   * HIT: +2 ELEM damage to all characters next turn.
   * MISS: -2 INT next turn.
 
 * VIT-DRV: **REVIVE**
   * Revives an incapacitated player. Using Items is recommended!!!
-  * ROLLOVER: 19
+  * ROLLOVER: 18
   * HIT: Incapacitated player comes back with 1 HP.
   * MISS: Player gets Minor Stun next turn; -3 VIT on following turn.
 
@@ -403,43 +403,43 @@ All INT skills cost VP and deal ELEM damage. There are actually two INT-INT skil
 
 * INT-INT-1: **CHARGE**
   * Rev up your magic engines. 
-  * ROLLOVER: 3 
+  * ROLLOVER: 0
   * HIT: +3 VP to user.
   * MISS: 
 
 * INT-INT-2: **PSYZAP**
   * Standard psychic attack. Costs 1 VP.
-  * ROLLOVER: 6
-  * HIT: 3 ELEM damage
+  * ROLLOVER: 3
+  * HIT: 3 + (INT) ELEM damage
   * MISS: 
 
 * INT-STR: **PSYBOMB**
   * A psychic explosive. Costs 2 VP.
-  * ROLLOVER: 10
-  * HIT: 2 ELEM damage; 1 PHYS damage
-  * MISS: -1 HP to user
+  * ROLLOVER: 6
+  * HIT: 1 ELEM damage; 2 PHYS damage
+  * MISS: 
 
 * INT-SPD: **SLOW**
   * Stops speedsters in their tracks. Costs 2 VP.
-  * ROLLOVER: 10
+  * ROLLOVER: 5
   * HIT: -2 SPD to target
-  * MISS: -2 SPD to user
+  * MISS: -1 SPD to user next turn
 
 * INT-DEF: **SHIELD BREAK**
   * Softens up tight defenses! Costs 2 VP.
-  * ROLLOVER: 10
+  * ROLLOVER: 6
   * HIT: -2 DEF to target
-  * MISS: -1 DEF and SPD to user
+  * MISS: -1 DEF to user next turn
 
 * INT-VIT: **POISON**
   * Poisons an enemy. Costs 3 VP.
-  * ROLLOVER: 12
+  * ROLLOVER: 6
   * HIT: Minor Poison on an enemy.
   * MISS: If player fails a RO 8 test, they receive Minor Poison.
 
 * INT-DRV: **VIMBOMB**
   * Spend all your VP on a massive attack. Costs all the user's VP.
-  * ROLLOVER: 15
+  * ROLLOVER: 10
   * HIT: 2 * user's VP ELEM damage.
   * MISS: Player gets Minor Stun next turn; -2 INT on following turn. Loses all their VP too, mind.
 
@@ -455,31 +455,31 @@ All DRV skills save for DRV-DRV require a firearm.
 
 * DRV-STR: **SHOOT**
   * Fire wepon.
-  * ROLLOVER: 10
-  * HIT: 3 + (DRV/2) PHYS damage.
+  * ROLLOVER: 5
+  * HIT: 3 + (DRV) PHYS damage.
   * MISS:
 
 * DRV-SPD: **RAPIDFIRE**
-  * Shoot 5 times, RO 12 for each.
-  * ROLLOVER: 12 per shot
-  * HIT: 1 + (DRV/2) per shot.
-  * MISS: -1 SPD next turn.
+  * Shoot 5 times, RO 8 for each.
+  * ROLLOVER: 8 per shot
+  * HIT: 1 + (DRV) per shot.
+  * MISS:
 
 * DRV-DEF: **SLUG**
   * Stuns.
-  * ROLLOVER: 13
-  * HIT: 2 + (DRV/2) PHYS damage. RO 16 for Minor Stun.
+  * ROLLOVER: 8
+  * HIT: 2 + (DRV) PHYS damage. RO 16 for Minor Stun.
   * MISS: Lose turn; -1 SPD next turn.
 
 * DRV-VIT: **DRAIN SHOT**
   * Vampire bullets. Costs 2 VP.
-  * ROLLOVER: 14
+  * ROLLOVER: 8
   * HIT: 2 PHYS damage. Recovers 1 HP.
   * MISS: -1 SPD and VIT next turn.
 
 * DRV-INT: **ELEMENTAL SHOT**
   * An enchanted bullet. Costs 2 VP.
-  * ROLLOVER: 12
+  * ROLLOVER: 8
   * HIT: 3 ELEM damage
   * MISS: -1 SPD and INT next turn.
 
@@ -519,9 +519,10 @@ Ailments can have two intensities- Minor and Major. All ailments are Minor by de
 
 * **BURN:** Deals damage each turn (2 * 3 turns / 1 * 5 turns) and lowers STR by 2. 
 * **FREEZE:** Deals damage each turn (1 * 2 turns / 0 * 6 turns) and lowers SPD by 2.
-* **WINDED:** Lose every other turn. Lasts for (2 / 4) turns.
-* **STUN:** Lose (1/3) turns.
+* **WINDED:** Lose every other turn. Lasts for (2 / 4) interrupted turns.
+* **STUN:** Lose (1/3) turns. If attacked, RO 10 - VIT to escape the stun status.
 * **POISON:** Deals damage each turn (2 * 3 turns / 5 * 2 turns) and lowers VIT by 2.
+* **BLIGHT:** Lowers WP each turn (1 * 2 turns / 1 * 5 turns)
 
 ## PROGRESSION
 
