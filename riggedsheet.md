@@ -83,6 +83,7 @@ Select one of the following *weapons*:
 * Basic Hammer
 * Basic Staff
 * Basic Gun
+
 Select one of the following *items*:
 * Basic Helmet
 * Basic Armor
