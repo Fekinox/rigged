@@ -4,55 +4,59 @@
 
 > What is the character's name?
 
-NAME: 
+NAME: Dominic Q. Ton
 
 > What other names does the character respond to?
 
-NICKNAME: 
+NICKNAME: Dominic, Dom
 
 > What race/species does the character belong to?
 
-RACE: 
+RACE: Human
 
 > What gender does the character identify as?
 
-GENDER: 
-
-> What does this character strive for? What motivates this character?
+GENDER: Male
 
 ----
 
-GOAL: 
+> What is this character's history and significance?
+
+HISTORY: Before being thrown into this universe, he was a senior roboticist for a large government firm. He specializes in training and innovating the firm's AI intelligences.
+
+> What does this character strive for? What motivates this character?
+
+GOAL: Dominic is strongly motivated by learning new things.
 
 > What is this character's deepest fear? What is their most fundamental flaw?
 
-FLAW: 
+FLAW: Dominic is very easy to manipulate.
 
 ## BASE STATS
 
 > The character's physical strength. Determines amount of weight player can carry.
 
-Strength (STR): 0
+Strength (STR): -2
 
 > The character's agility. Faster characters move first in combat.
 
-Speed (SPD): 0
+Speed (SPD): -1
 
 > The character's defenses. Determines stun resistance.
 
-Defense (DEF): 0
+Defense (DEF): -2
 
 > The character's health and well-being. Determines ailment resistance.
 
-Vitality (VIT): 0
+Vitality (VIT): 1
 
 > The character's smarts and elemental attunement. Determines elemental resistance.
 
-Intelligence (INT): 0
+Intelligence (INT): 3
 
 > The character's raw drive, motivation, and confidence. Determines Willpower.
 
-Drive (DRV): 0
+Drive (DRV): 1
 
 ----
 
@@ -62,7 +66,7 @@ HP: 10
 
 > Add (1 * INT + 1/2 * VIT), rounded down.
 
-VP: 5
+VP: 8
 
 > Add (3/2 * DRV), rounded down.
 
@@ -73,16 +77,13 @@ WP: 10
 > In total, your character must have five skills AND perks. So this means five skills, two skills and three perks, etc. Refer to the main sheet for info.
 
 SKILLS (max 5):
-* (STR-SPD) Sucker Punch...
-* Skill 2
-* Skill 3
-* Skill 4
-* Skill 5
+* (INT-INT-2) Psyzap
+* (INT-STR) Psybomb
+* (DRV-INT) Elemental Shot
 
 PERKS (max 3):
-* Hammer Specialist...
-* Perk 2
-* Perk 3
+* Laser Specialist
+* Spammer
 
 ## STARTER EQUIPMENT
 
@@ -96,7 +97,7 @@ Select one of the following *weapons*:
 * Basic Dagger
 * Basic Hammer
 * Basic Book
-* Basic Laser
+* __Basic Laser__
 * Basic Gun
 
 Select one of the following *items*:
@@ -104,4 +105,4 @@ Select one of the following *items*:
 * Basic Armor
 * Basic Shoes
 * Basic Amulet
-* Health Canteen
+* __Health Canteen__
